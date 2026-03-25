@@ -1,6 +1,6 @@
 # Simple RAG Chatbot
 
-This repository contains the development of a **Retrieval-Augmented Generation (RAG)** chatbot designed to interact with private PDF documents. It features a modular structure including a dedicated Frontend and Backend.
+This repository contains a small pipeline of a **Retrieval-Augmented Generation (RAG)** chatbot designed to interact with private PDF documents.
 
 ---
 
@@ -8,9 +8,9 @@ This repository contains the development of a **Retrieval-Augmented Generation (
 The repository is organized into the following components:
 
 * **`chatbot.py`**: The core RAG implementation (Load, Split, Embed, and Retrieve).
-* **`frontend/`**: The UI layer (built with React/Vite using **WebSocket** for real-time communication).
-* **`backend/`**: The API service layer (FastAPI) to handle document processing and model orchestration.
-* **`docs/`**: Directory for storing local PDF documents used as the knowledge base.
+* **`frontend/`**: The UI layer (not finished)
+* **`backend/`**: The API service layer using FASTAPI (not finished)
+* **`docs/`**: Directory for storing local PDF documents used as the knowledge base (tested on 1 PDF).
 
 ---
 
@@ -18,9 +18,8 @@ The repository is organized into the following components:
 * **Orchestration**: [LangChain](https://github.com/langchain-ai/langchain) for managing the RAG pipeline.
 * **Document Processing**: `PyPDFLoader` for extracting text from PDFs.
 * **Text Splitting**: `RecursiveCharacterTextSplitter` with optimized separators for maintaining semantic context.
-* **Vector Store**: [FAISS](https://github.com/facebookresearch/faiss) for efficient similarity search and local vector storage.
-* **Models**: Integrated with **Ollama** (Local LLMs) and **HuggingFace Inference API**.
-* **Communication**: **WebSocket (WS)** implementation for low-latency chat interactions between FE and BE.
+* **Vector Store**: [FAISS]for efficient similarity search and local vector storage.
+* **Models**: HuggingFace Inference API.
 
 ---
 
