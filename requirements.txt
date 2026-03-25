@@ -4,3 +4,5 @@ langchain-core
 faiss-cpu
 pypdf
 tdqm
+langchain_huggingface
+dotenv
